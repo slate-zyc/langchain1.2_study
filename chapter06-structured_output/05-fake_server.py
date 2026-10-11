@@ -1,6 +1,8 @@
 """
 @Author:shkstart
-@Desc: 虚拟的deepseek服务器端代码
+@Desc: 虚拟的deepseek服务器端代码。
+主要是因为大模型比较智能，即使理论上使用 pydantic 模式时间=类型不匹配会报错，但很多时候大模型会自动检查出来存在错误并自主纠正。
+FakeDeepSeekHandler 是为了观察不同模式下 LangChain 会从响应中的哪些字段中抽取信息，这个类的具体实现代码不用深究
 """
 
 import json
